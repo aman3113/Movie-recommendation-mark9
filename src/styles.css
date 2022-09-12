@@ -1,0 +1,102 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  border: 1px solid black;
+  color: white;
+  background: rgb(51, 49, 49);
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-style: sans-serif;
+  font-size: 14px;
+}
+
+button {
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 16px;
+  background-color: rgb(145, 145, 185);
+}
+
+button:focus {
+  font-weight: bolder;
+  font-size: 20px;
+
+  background-color: purple;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    width: 90%;
+  }
+  .card-img {
+    width: 100%;
+  }
+
+  .card-about {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .card {
+    width: 80%;
+  }
+  .card-img {
+    width: 40%;
+  }
+
+  .card-about {
+    width: 60%;
+  }
+}
+
+.card {
+  list-style-type: none;
+  max-width: 600px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+.card:hover {
+  background: black;
+  color: white;
+  border: 1px solid rgb(147, 147, 236);
+}
+
+.card-img img {
+  width: 90%;
+  height: 200px;
+  padding: 10px 10px;
+}
+
+.card-about {
+  text-align: left;
+  padding: 0px 10px;
+}
+
+span {
+  background: grey;
+  padding: 5px;
+}
